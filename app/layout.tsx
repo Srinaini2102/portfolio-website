@@ -9,7 +9,7 @@ const _inter = Inter({ subsets: ["latin"] });
 const _caveat = Caveat({ subsets: ["latin"], variable: "--font-handwritten" });
 
 export const metadata: Metadata = {
-  title: 'Srinaini Portfolio',
+  title: 'Creative Portfolio',
   description: 'I solve problems, design solutions, build products, and iterate endlessly',
   generator: 'v0.app',
   icons: {
@@ -33,17 +33,20 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased ${_caveat.variable}`}>
+      <body
+        className={`font-sans antialiased ${_inter.className} ${_caveat.variable}`}
+      >
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
+          storageKey="portfolio-theme"
         >
           {children}
         </ThemeProvider>
@@ -52,3 +55,4 @@ export default function RootLayout({
     </html>
   )
 }
+
