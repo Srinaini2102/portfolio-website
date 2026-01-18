@@ -9,7 +9,7 @@ const _inter = Inter({ subsets: ["latin"] });
 const _caveat = Caveat({ subsets: ["latin"], variable: "--font-handwritten" });
 
 export const metadata: Metadata = {
-  title: 'Creative Portfolio',
+  title: 'Srinaini Portfolio',
   description: 'I solve problems, design solutions, build products, and iterate endlessly',
   generator: 'v0.app',
   icons: {
