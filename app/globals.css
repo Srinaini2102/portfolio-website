@@ -1,4 +1,4 @@
-/*@import 'tailwindcss';
+@import 'tailwindcss';
 @import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
@@ -39,7 +39,7 @@
   --sidebar-ring: oklch(0.708 0 0);
   
   /* Custom colors for hand-drawn style */
- /* --sketch-stroke: oklch(0.3 0.02 280);
+  --sketch-stroke: oklch(0.3 0.02 280);
   --sketch-fill: oklch(0.55 0.15 340);
   --wave-1: oklch(0.92 0.03 280);
   --wave-2: oklch(0.88 0.04 300);
@@ -80,7 +80,7 @@
   --sidebar-ring: oklch(0.5 0.1 340);
   
   /* Custom colors for hand-drawn style - dark mode */
- /* --sketch-stroke: oklch(0.9 0.02 280);
+  --sketch-stroke: oklch(0.9 0.02 280);
   --sketch-fill: oklch(0.7 0.15 340);
   --wave-1: oklch(0.2 0.03 280);
   --wave-2: oklch(0.18 0.04 300);
@@ -140,4 +140,3 @@
     @apply bg-background text-foreground;
   }
 }
-*/
