@@ -358,9 +358,6 @@ export default function ConnectWithMeSection() {
                   </AnimatePresence>
                 </form>
 
-                <div className="mt-6 text-xs text-muted-foreground/80">
-                  Messages sent to: <span className="font-medium">srinaini.garimella@tamu.edu</span>
-                </div>
               </div>
             </motion.div>
           </div>
