@@ -126,7 +126,6 @@ const featuredByTitle: Record<string, FeaturedProjectExtras> = {
     imageAlt: "DeliverEase preview",
   },
   Swapify: {
-    badge: "Featured Project",
     metrics: [
       { value: "2-sided", label: "Marketplace" },
       { value: "Tokens", label: "Economy" },
@@ -192,8 +191,7 @@ const featuredByTitle: Record<string, FeaturedProjectExtras> = {
       "Aligned stakeholders on feed structure, mapping, and automation",
       "Improved delivery confidence with testable requirements",
     ],
-    ctaLabel: "View Case Study",
-    ctaHref: "#",
+
     imageSrc: ct.src,
     imageAlt: "CT Publishing preview",
   },
@@ -212,8 +210,7 @@ const featuredByTitle: Record<string, FeaturedProjectExtras> = {
       "Built a PERT diagram to map dependencies and critical path",
       "Performed stakeholder analysis to clarify roles, influence, and communication",
     ],
-    ctaLabel: "View Case Study",
-    ctaHref: "#",
+  
     imageSrc: cybersecurity.src,
     imageAlt: "Apollo Financial Services cybersecurity case study preview",
   },
@@ -230,8 +227,6 @@ const featuredByTitle: Record<string, FeaturedProjectExtras> = {
       "Added triggers and stored procedures to enforce business rules",
       "Built ETL processes to keep data clean and consistent across sources",
     ],
-    ctaLabel: "View Build",
-    ctaHref: "#",
     imageSrc: inventory.src,
     imageAlt: "Inventory management database preview",
   },
