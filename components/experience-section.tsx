@@ -213,9 +213,9 @@ export function ExperienceSection() {
           </div>
           <p 
             className="text-muted-foreground ml-0 md:ml-20"
-            style={{ fontFamily: "var(--font-handwritten)" }}
+            style={{ fontFamily: "var(--font-handwritten)", fontSize: "20px" }}
           >
-            where I've worked and what I've built
+            where I've worked 
           </p>
         </motion.div>
 

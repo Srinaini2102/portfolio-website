@@ -233,7 +233,7 @@ export function SkillsSection() {
               />
             </div>
           </div>
-          <p className="text-muted-foreground ml-0 md:ml-20" style={{ fontFamily: "var(--font-handwritten)" }}>
+          <p className="text-muted-foreground ml-0 md:ml-20" style={{ fontFamily: "var(--font-handwritten)", fontSize: "20px" }}>
             technologies and tools I work with
           </p>
         </motion.div>

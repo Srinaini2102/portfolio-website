@@ -195,7 +195,7 @@ export function LeadershipSection() {
           </div>
           <p 
             className="text-muted-foreground ml-0 md:ml-20"
-            style={{ fontFamily: "var(--font-handwritten)" }}
+            style={{ fontFamily: "var(--font-handwritten)", fontSize: "20px" }}
           >
             roles where I led, mentored, and made an impact
           </p>
