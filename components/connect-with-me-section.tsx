@@ -320,17 +320,7 @@ export default function ConnectWithMeSection() {
 
                   <div className="pt-2 text-sm text-muted-foreground">
                     <p>I usually reply within 24–48 hours.</p>
-                    <p className="mt-1">
-                      Calendly Link :{" "}
-                      <a
-                        href={CALENDLY_URL}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="underline underline-offset-4 hover:text-foreground transition"
-                      >
-                        {CALENDLY_URL}
-                      </a>
-                    </p>
+            
                   </div>
 
                   <AnimatePresence>
