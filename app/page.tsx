@@ -95,47 +95,43 @@ function scrollToId(id: string) {
 }
 
 function useActiveSection(sectionIds: string[]) {
-  const [active, setActive] = useState<string>("top")
+  const [active, setActive] = useState("top")
+  const NAV_HEIGHT = 92
 
   useEffect(() => {
-    const elements = sectionIds
+    const sections = sectionIds
+      .filter((id) => id !== "top")
       .map((id) => document.getElementById(id))
       .filter(Boolean) as HTMLElement[]
 
-    if (!elements.length) return
+    if (!sections.length) return
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        // pick the most visible entry
-        const visible = entries
-          .filter((e) => e.isIntersecting)
-          .sort((a, b) => (b.intersectionRatio ?? 0) - (a.intersectionRatio ?? 0))[0]
-
-        if (visible?.target?.id) setActive(visible.target.id)
-      },
-      {
-        root: null,
-        // this makes the "active" switch when section reaches near top under nav
-        rootMargin: "-40% 0px -55% 0px",
-        threshold: [0.05, 0.1, 0.2, 0.35],
-      }
-    )
-
-    elements.forEach((el) => observer.observe(el))
-    return () => observer.disconnect()
-  }, [sectionIds])
-
-  // fallback: if at very top, mark "top"
-  useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY < 40) setActive("top")
+      const scrollPos = window.scrollY + NAV_HEIGHT + 5
+
+      // ✅ HOME active
+      if (scrollPos < sections[0].offsetTop) {
+        setActive("top")
+        return
+      }
+
+      // ✅ Find current section
+      for (let i = sections.length - 1; i >= 0; i--) {
+        if (scrollPos >= sections[i].offsetTop) {
+          setActive(sections[i].id)
+          return
+        }
+      }
     }
+
+    onScroll()
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
-  }, [])
+  }, [sectionIds])
 
   return active
 }
+
 
 /** ✅ Sticky navbar with:
  *  1) SG top-left
