@@ -100,7 +100,7 @@ export function AboutSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            {["Product Management", "UX Design", "Figma", "User Research", "Agile/Scrum", "Data Analysis", "Power BI"].map((skill, index) => (
+            {["Product Management", "A/B Testing", "Figma", "User Research", "Agile/Scrum", "Data Analysis", "Power BI", "MERN Stack"].map((skill, index) => (
               <motion.span
                 key={skill}
                 className="px-3 py-1.5 bg-muted text-muted-foreground text-sm rounded-full border border-border/50"
@@ -178,11 +178,11 @@ export function AboutSection() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary">-</span>
-                Product & UX Research
+                Open to Work
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary">-</span>
-                Open to PM/UX opportunities
+                Product & UX Research
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary">-</span>
@@ -190,7 +190,7 @@ export function AboutSection() {
               </li>
               <li className="flex items-center gap-2">
                 <span className="text-primary">-</span>
-                AI for product analytics
+                Build MERN stack applications
               </li>
             </ul>
           </div>

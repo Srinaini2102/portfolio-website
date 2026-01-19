@@ -7,19 +7,19 @@ import { useRef } from "react"
 
 const experiences = [
   {
-    company: "All later ",
-    role: "UI/UX Developer",
+    company: "School of Architecture, makerspace lab ",
+    role: "Student Technician",
     location: "College Station, Texas",
-    period: "March 2025 - May 2025",
+    period: "September 2024 - Present",
     description: [
-      "Conducted user research by distributing online surveys, running tabling sessions, and collecting feedback from 100+ students to identify usability gaps",
-      "Facilitated in-person interviews using the think-aloud protocol, redesigning UI mockups in Figma to improve navigation",
-      "Documented designs and shared insights in Notion, supporting a 30% increase in adoption at Texas A&M"
+      "Collaborate with students to understand project requirements and translate ideas into manufacturable designs using 3D printing and laser cutting technologies.",
+      "Operate and maintain 3D printers and laser cutters while ensuring quality, accuracy, and adherence to makerspace safety standards.",
+      "Provide hands-on technical support and guidance to students throughout the prototyping process, from concept clarification to final fabrication."
     ]
   },
   {
     company: "Lynkr",
-    role: "UI/UX Developer",
+    role: "UI/UX Designer (volunteer)",
     location: "College Station, Texas",
     period: "March 2025 - May 2025",
     description: [
