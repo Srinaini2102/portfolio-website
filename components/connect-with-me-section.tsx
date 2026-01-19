@@ -319,8 +319,8 @@ export default function ConnectWithMeSection() {
                   </motion.button>
 
                   <div className="pt-2 text-sm text-muted-foreground">
+                    <br></br>
                     <p>I usually reply within 24–48 hours.</p>
-            
                   </div>
 
                   <AnimatePresence>

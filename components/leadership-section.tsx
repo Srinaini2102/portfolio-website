@@ -138,23 +138,6 @@ function LeadershipCard({ item, index }: { item: typeof leadership[0]; index: nu
             {item.description}
           </p>
 
-          {/* Arrow indicator */}
-          <motion.div
-            className="absolute bottom-4 right-4 w-8 h-8 rounded-full flex items-center justify-center border border-border group-hover:border-primary/50 transition-colors"
-            animate={{ 
-              x: isHovered ? 3 : 0,
-              backgroundColor: isHovered ? `${item.color}20` : "transparent"
-            }}
-          >
-            <svg 
-              className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" 
-              fill="none" 
-              viewBox="0 0 24 24" 
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-            </svg>
-          </motion.div>
         </div>
       </motion.div>
     </motion.div>
