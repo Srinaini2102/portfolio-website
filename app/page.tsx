@@ -104,18 +104,19 @@ function useActiveSection(sectionIds: string[]) {
       .map((id) => document.getElementById(id))
       .filter(Boolean) as HTMLElement[]
 
-    if (!sections.length) return
+    if (!sections.length) {
+      console.warn("No sections found")
+      return
+    }
 
     const onScroll = () => {
       const scrollPos = window.scrollY + NAV_HEIGHT + 5
 
-      // ✅ HOME active
       if (scrollPos < sections[0].offsetTop) {
         setActive("top")
         return
       }
 
-      // ✅ Find current section
       for (let i = sections.length - 1; i >= 0; i--) {
         if (scrollPos >= sections[i].offsetTop) {
           setActive(sections[i].id)
@@ -233,7 +234,7 @@ export default function Home() {
 
   return (
     // ✅ id="top" for Home + CSS smooth scroll fallback
-    <main id="top" className="relative min-h-screen overflow-hidden bg-background scroll-smooth">
+    <main id="top" className="relative min-h-screen overflow-x-hidden bg-background scroll-smooth">
       <Navbar />
 
       <ThemeToggle />
