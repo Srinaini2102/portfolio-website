@@ -208,7 +208,7 @@ export function SkillsSection() {
   )
 
   return (
-    <section id="skills" className="relative z-10 min-h-screen py-20 md:py-32 px-4 scroll-mt-[120px]">
+    <section id="skills" className="relative z-10 py-20 md:py-32 px-4">
       <div className="max-w-5xl mx-auto">
         {/* Section header */}
         <motion.div

@@ -237,7 +237,7 @@ export default function Home() {
     <main id="top" className="relative min-h-screen overflow-x-hidden bg-background scroll-smooth">
       <Navbar />
 
-      <ThemeToggle />
+      {/* <ThemeToggle /> */}
       <WavyBackground />
 
       <div
